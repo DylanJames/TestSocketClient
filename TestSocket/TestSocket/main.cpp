@@ -6,7 +6,7 @@
 using namespace std;
 
 #pragma comment(lib, "Ws2_32.lib")
-#define DEFAULT_PORT "27015"
+#define DEFAULT_PORT "27015"		//"21" or "27015"?
 //char *argv[];				//Makes argv (below) work
 
 int main(int argc, char *argv[]) {
@@ -55,7 +55,7 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-	cout << "No errors currently detected..." << endl;
+	cout << "No initialization errors thus far..." << endl;
 
 	//Connect to server
 	iResult = connect( ConnectSocket, ptr->ai_addr, (int)ptr->ai_addrlen);
